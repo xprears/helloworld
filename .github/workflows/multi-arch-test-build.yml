@@ -1,4 +1,4 @@
-name: Test Build
+name: new arm
 
 on:
   pull_request:
@@ -24,7 +24,7 @@ jobs:
 
       - name: Determine branch name
         run: |
-          BRANCH="$master"
+          BRANCH="master"
           echo "Building for $BRANCH"
           echo "BRANCH=$BRANCH" >> $GITHUB_ENV
 
